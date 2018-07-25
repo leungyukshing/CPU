@@ -1,0 +1,633 @@
+
+*** Running vivado
+    with args -log display_cpu2.vds -m64 -mode batch -messageDb vivado.pb -source display_cpu2.tcl
+
+
+****** Vivado v2014.2 (64-bit)
+  **** SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+  **** IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source display_cpu2.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_verilog -library xil_defaultlib {
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Selector_2_to_1.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/RegisterFile.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PCAdd.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PC.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/InsMEM.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Extend.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataRegister.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ALU.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/key_fangdou.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/clock_div.v
+#   C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v
+# }
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Selector_2_to_1.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/RegisterFile.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PCAdd.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PC.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/InsMEM.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Extend.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataRegister.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ALU.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/key_fangdou.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/clock_div.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v]
+# read_xdc C:/Xilinx/Vivado/CPU2/CPU2.srcs/constrs_1/new/display_cpu2.xdc
+# set_property used_in_implementation false [get_files C:/Xilinx/Vivado/CPU2/CPU2.srcs/constrs_1/new/display_cpu2.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Xilinx/Vivado/CPU2/CPU2.cache/wt [current_project]
+# set_property parent.project_dir C:/Xilinx/Vivado/CPU2 [current_project]
+# catch { write_hwdef -file display_cpu2.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top display_cpu2 -part xc7a35tcpg236-1
+Command: synth_design -top display_cpu2 -part xc7a35tcpg236-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Extend.v:34]
+WARNING: [Synth 8-2292] literal value truncated to fit in 2 bits [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v:57]
+WARNING: [Synth 8-2611] redeclaration of ansi port count is not allowed [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v:28]
+WARNING: [Synth 8-976] count has already been declared [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v:28]
+WARNING: [Synth 8-2654] second declaration of count ignored [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v:28]
+INFO: [Synth 8-994] count is declared here [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v:26]
+WARNING: [Synth 8-2611] redeclaration of ansi port testsignal is not allowed [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:53]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 244.262 ; gain = 69.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'display_cpu2' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter4' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter4' (1#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/counter4.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_div' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/clock_div.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_div' (2#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/clock_div.v:23]
+INFO: [Synth 8-638] synthesizing module 'key_fangdou' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/key_fangdou.v:23]
+	Parameter SAMPLE_TIME bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'key_fangdou' (3#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/key_fangdou.v:23]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display.v:28]
+INFO: [Synth 8-256] done synthesizing module 'display' (4#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-638] synthesizing module 'm_cpu' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-567] referenced signal 'PC' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PC.v:76]
+WARNING: [Synth 8-567] referenced signal 'ReadData1' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PC.v:76]
+INFO: [Synth 8-256] done synthesizing module 'PC' (5#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ALU.v:46]
+WARNING: [Synth 8-3848] Net sign in module/entity ALU does not have driver. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ALU.v:33]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataRegister' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataRegister.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DataRegister' (7#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataRegister.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMEM' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:23]
+WARNING: [Synth 8-567] referenced signal 'memory' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:43]
+WARNING: [Synth 8-567] referenced signal 'DAddr' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:43]
+WARNING: [Synth 8-567] referenced signal 'DataIn' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:43]
+INFO: [Synth 8-256] done synthesizing module 'DataMEM' (8#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'Selector_2_to_1' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Selector_2_to_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Selector_2_to_1' (9#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Selector_2_to_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/RegisterFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (10#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/RegisterFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'Extend' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Extend' (11#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-638] synthesizing module 'PCAdd' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PCAdd.v:23]
+WARNING: [Synth 8-567] referenced signal 'pc' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PCAdd.v:28]
+INFO: [Synth 8-256] done synthesizing module 'PCAdd' (12#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/PCAdd.v:23]
+INFO: [Synth 8-638] synthesizing module 'InsMEM' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/InsMEM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ins.txt' is read successfully [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/InsMEM.v:34]
+INFO: [Synth 8-256] done synthesizing module 'InsMEM' (13#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/InsMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v:23]
+	Parameter sIF bound to: 3'b000 
+	Parameter sID bound to: 3'b001 
+	Parameter sEXE bound to: 3'b010 
+	Parameter sWB bound to: 3'b011 
+	Parameter sMEM bound to: 3'b100 
+	Parameter add bound to: 6'b000000 
+	Parameter sub bound to: 6'b000001 
+	Parameter addi bound to: 6'b000010 
+	Parameter Or bound to: 6'b010000 
+	Parameter And bound to: 6'b010001 
+	Parameter ori bound to: 6'b010010 
+	Parameter sll bound to: 6'b011000 
+	Parameter slt bound to: 6'b100110 
+	Parameter sltiu bound to: 6'b100111 
+	Parameter sw bound to: 6'b110000 
+	Parameter lw bound to: 6'b110001 
+	Parameter beq bound to: 6'b110100 
+	Parameter bltz bound to: 6'b110110 
+	Parameter j bound to: 6'b111000 
+	Parameter jr bound to: 6'b111001 
+	Parameter jal bound to: 6'b111010 
+	Parameter halt bound to: 6'b111111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v:110]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v:87]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (14#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v:23]
+WARNING: [Synth 8-3848] Net Opcode in module/entity m_cpu does not have driver. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v:26]
+WARNING: [Synth 8-3848] Net ALUoutDR_out in module/entity m_cpu does not have driver. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v:32]
+INFO: [Synth 8-256] done synthesizing module 'm_cpu' (15#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:80]
+WARNING: [Synth 8-567] referenced signal 'pos4' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:78]
+WARNING: [Synth 8-567] referenced signal 'pos3' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:78]
+WARNING: [Synth 8-567] referenced signal 'pos2' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:78]
+WARNING: [Synth 8-567] referenced signal 'pos1' should be on the sensitivity list [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:78]
+INFO: [Synth 8-256] done synthesizing module 'display_cpu2' (16#1) [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 272.223 ; gain = 96.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [C:/Xilinx/Vivado/CPU2/CPU2.srcs/constrs_1/new/display_cpu2.xdc]
+Finished Parsing XDC File [C:/Xilinx/Vivado/CPU2/CPU2.srcs/constrs_1/new/display_cpu2.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 502.895 ; gain = 327.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 502.895 ; gain = 327.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 502.895 ; gain = 327.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'count_reg' in module 'counter4'
+INFO: [Synth 8-802] inferred FSM for state register 'presentState_reg' in module 'ControlUnit'
+INFO: [Synth 8-3354] encoded FSM with state register 'count_reg' using encoding 'one-hot' in module 'counter4'
+WARNING: [Synth 8-3848] Net sign in module/entity ALU does not have driver. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[0]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[1]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[2]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[3]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[4]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[5]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[6]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[7]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[8]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[9]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[10]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[11]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[12]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[13]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[14]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[15]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[16]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[17]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[18]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[19]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[20]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[21]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[22]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[23]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[24]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[25]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[26]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[27]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[28]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[29]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[30]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[31]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[32]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[33]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[34]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[35]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[36]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[37]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[38]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[39]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[40]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[41]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[42]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[43]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[44]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[45]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[46]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[47]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[48]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[49]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[50]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[51]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[52]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[53]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[54]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[55]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[56]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[57]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[58]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[59]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[60]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[61]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[62]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[63]' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/DataMEM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/InsMEM.v:40]
+INFO: [Synth 8-3354] encoded FSM with state register 'presentState_reg' using encoding 'one-hot' in module 'ControlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextState_reg' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/ControlUnit.v:217]
+WARNING: [Synth 8-3848] Net Opcode in module/entity m_cpu does not have driver. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v:26]
+WARNING: [Synth 8-3848] Net ALUoutDR_out in module/entity m_cpu does not have driver. [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/m_cpu.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'num_reg' [C:/Xilinx/Vivado/CPU2/CPU2.srcs/sources_1/new/display_cpu2.v:69]
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |DataMEM           |           1|     61562|
+|2     |m_cpu__GB1        |           1|      2498|
+|3     |display_cpu2__GC0 |           1|      1253|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               26 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 192   
+	  16 Input      8 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	  11 Input      6 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 12    
+	   5 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 264   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module display_cpu2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 12    
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module DataMEM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 192   
+	   2 Input      1 Bit        Muxes := 256   
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+Module DataRegister__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Selector_2_to_1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DataRegister__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Selector_2_to_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module DataRegister__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module DataRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PCAdd 
+Detailed RTL Component Info : 
+Module InsMEM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      6 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module m_cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module counter4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module clock_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module key_fangdou 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 519.668 ; gain = 344.441
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 519.668 ; gain = 344.441
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 519.668 ; gain = 344.441
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+----------------------------+--------------------+----------------------+---------------+-------------------+
+|Module Name | RTL Object                 | Inference Criteria | Size (depth X width) | Primitives    | Hierarchical Name | 
++------------+----------------------------+--------------------+----------------------+---------------+-------------------+
+|m_cpu__GB1  | registerfile/registers_reg | Implied            | 32 X 32              | RAM32M x 12   | ram__1            | 
++------------+----------------------------+--------------------+----------------------+---------------+-------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uuti_0/\controlunit/FSM_onehot_nextState_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/FSM_onehot_count_reg[0] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 582.223 ; gain = 406.996
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 582.223 ; gain = 406.996
+Finished Parallel Section  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 582.223 ; gain = 406.996
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 582.223 ; gain = 406.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 582.223 ; gain = 406.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 629.246 ; gain = 454.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 630.672 ; gain = 455.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 630.672 ; gain = 455.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 630.672 ; gain = 455.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     4|
+|2     |CARRY4  |    67|
+|3     |INV     |     1|
+|4     |LUT1    |   159|
+|5     |LUT2    |   141|
+|6     |LUT3    |   863|
+|7     |LUT4    |   185|
+|8     |LUT5    |   799|
+|9     |LUT6    |  1461|
+|10    |MUXCY_L |    42|
+|11    |MUXF7   |   114|
+|12    |MUXF8   |     9|
+|13    |RAM32M  |    12|
+|14    |XORCY   |    44|
+|15    |FDCE    |    43|
+|16    |FDPE    |     1|
+|17    |FDRE    |   246|
+|18    |FDSE    |     1|
+|19    |LD      |   553|
+|20    |LDC     |    32|
+|21    |IBUF    |     5|
+|22    |OBUF    |    13|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------+------+
+|      |Instance         |Module         |Cells |
++------+-----------------+---------------+------+
+|1     |top              |               |  4795|
+|2     |  U0             |counter4       |    21|
+|3     |  U1             |clock_div      |    67|
+|4     |  dis            |display        |     7|
+|5     |  f              |key_fangdou    |   144|
+|6     |  uut            |m_cpu          |  4529|
+|7     |    ADR          |DataRegister   |    53|
+|8     |    ALUoutDR     |DataRegister_0 |   361|
+|9     |    BDR          |DataRegister_1 |  1065|
+|10    |    DBDR         |DataRegister_2 |    64|
+|11    |    Pc           |PC             |   199|
+|12    |    alu          |ALU            |    48|
+|13    |    controlunit  |ControlUnit    |   352|
+|14    |    dataMem      |DataMEM        |  2065|
+|15    |    insMem       |InsMEM         |   281|
+|16    |    registerfile |RegisterFile   |    13|
++------+-----------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 630.672 ; gain = 455.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 630.672 ; gain = 455.445
+INFO: [Netlist 29-17] Analyzing 755 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 609 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 12 instances
+  LD => LDCE: 553 instances
+  LDC => LDCE: 32 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:10 . Memory (MB): peak = 630.672 ; gain = 439.102
+# write_checkpoint display_cpu2.dcp
+# report_utilization -file display_cpu2_utilization_synth.rpt -pb display_cpu2_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 630.672 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 23 00:26:30 2018...

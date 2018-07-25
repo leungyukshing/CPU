@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1527146895">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="display_cpu_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="display_cpu_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="display_cpu_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="display_cpu.tcl"/>
+  <File Type="OPT-DCP" Name="display_cpu_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="display_cpu_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="display_cpu_placed.dcp"/>
+  <File Type="PLACE-IO" Name="display_cpu_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="display_cpu_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="display_cpu_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="display_cpu_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="display_cpu_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="display_cpu_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="display_cpu_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="display_cpu_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="display_cpu_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="display_cpu_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="display_cpu_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="display_cpu_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="display_cpu_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="display_cpu_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="display_cpu_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="display_cpu_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="display_cpu_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="display_cpu_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="display_cpu_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="display_cpu_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="display_cpu_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="display_cpu.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="display_cpu_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="display_cpu.bit"/>
+  <File Type="BG-BIN" Name="display_cpu.bin"/>
+  <File Type="BITSTR-MSK" Name="display_cpu.msk"/>
+  <File Type="BITSTR-RBT" Name="display_cpu.rbt"/>
+  <File Type="BITSTR-NKY" Name="display_cpu.nky"/>
+  <File Type="BITSTR-BMM" Name="display_cpu_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="display_cpu.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="display_cpu.sysdef"/>
+  <File Type="BG-BGN" Name="display_cpu.bgn"/>
+  <File Type="BG-DRC" Name="display_cpu.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/display_cpu.xdc">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PIOPLANDIR/constrs_1/designprops.xml">
+      <FileInfo SFType="CompatPartsDb">
+        <Attr Name="Library" Val="xil_defaultlib"/>
+      </FileInfo>
+    </File>
+    <File Path="$PIOPLANDIR/constrs_1/usercols.xml">
+      <FileInfo SFType="UserColsDb">
+        <Attr Name="Library" Val="xil_defaultlib"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/display_cpu.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

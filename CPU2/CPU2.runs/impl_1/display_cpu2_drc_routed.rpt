@@ -1,0 +1,1127 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Sat Jun 23 00:27:35 2018
+| Host         : LAPTOP-QPRR3A3L running 64-bit major release  (build 9200)
+| Command      : report_drc
+-----------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 137
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net U0/E[0] is a gated clock net sourced by a combinational pin U0/num_reg[3]_i_2/O, cell U0/num_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net uut/ALUoutDR/E[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[57][7]_i_2/O, cell uut/ALUoutDR/memory_reg[57][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net uut/ALUoutDR/O10[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[33][7]_i_2/O, cell uut/ALUoutDR/memory_reg[33][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net uut/ALUoutDR/O11[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[40][7]_i_2/O, cell uut/ALUoutDR/memory_reg[40][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net uut/ALUoutDR/O12[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[8][7]_i_2/O, cell uut/ALUoutDR/memory_reg[8][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net uut/ALUoutDR/O13[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[16][7]_i_2/O, cell uut/ALUoutDR/memory_reg[16][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net uut/ALUoutDR/O14[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[1][7]_i_2/O, cell uut/ALUoutDR/memory_reg[1][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net uut/ALUoutDR/O15[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[63][7]_i_2/O, cell uut/ALUoutDR/memory_reg[63][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net uut/ALUoutDR/O16[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[55][7]_i_2/O, cell uut/ALUoutDR/memory_reg[55][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net uut/ALUoutDR/O18[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[39][7]_i_2/O, cell uut/ALUoutDR/memory_reg[39][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net uut/ALUoutDR/O19[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[62][7]_i_2/O, cell uut/ALUoutDR/memory_reg[62][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net uut/ALUoutDR/O20[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[60][7]_i_2/O, cell uut/ALUoutDR/memory_reg[60][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net uut/ALUoutDR/O21[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[58][7]_i_2/O, cell uut/ALUoutDR/memory_reg[58][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net uut/ALUoutDR/O22[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[27][7]_i_2/O, cell uut/ALUoutDR/memory_reg[27][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net uut/ALUoutDR/O28[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[49][7]_i_2/O, cell uut/ALUoutDR/memory_reg[49][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net uut/ALUoutDR/O29[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[26][7]_i_2/O, cell uut/ALUoutDR/memory_reg[26][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net uut/ALUoutDR/O31[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[21][7]_i_2/O, cell uut/ALUoutDR/memory_reg[21][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net uut/ALUoutDR/O32[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[28][7]_i_2/O, cell uut/ALUoutDR/memory_reg[28][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net uut/ALUoutDR/O34[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[42][7]_i_2/O, cell uut/ALUoutDR/memory_reg[42][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net uut/ALUoutDR/O35[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[41][7]_i_2/O, cell uut/ALUoutDR/memory_reg[41][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net uut/ALUoutDR/O36[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[35][7]_i_2/O, cell uut/ALUoutDR/memory_reg[35][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net uut/ALUoutDR/O37[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[44][7]_i_2/O, cell uut/ALUoutDR/memory_reg[44][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net uut/ALUoutDR/O38[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[37][7]_i_2/O, cell uut/ALUoutDR/memory_reg[37][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net uut/ALUoutDR/O39[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[13][7]_i_2/O, cell uut/ALUoutDR/memory_reg[13][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net uut/ALUoutDR/O7[0] is a gated clock net sourced by a combinational pin uut/ALUoutDR/memory_reg[0][7]_i_2/O, cell uut/ALUoutDR/memory_reg[0][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net uut/controlunit/E[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[9][7]_i_2/O, cell uut/controlunit/memory_reg[9][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net uut/controlunit/O103 is a gated clock net sourced by a combinational pin uut/controlunit/temp_reg[31]_i_3/O, cell uut/controlunit/temp_reg[31]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net uut/controlunit/O35[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[6][7]_i_2/O, cell uut/controlunit/memory_reg[6][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net uut/controlunit/O36[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[36][7]_i_2/O, cell uut/controlunit/memory_reg[36][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net uut/controlunit/O37[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[20][7]_i_2/O, cell uut/controlunit/memory_reg[20][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net uut/controlunit/O38[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[48][7]_i_2/O, cell uut/controlunit/memory_reg[48][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net uut/controlunit/O39[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[34][7]_i_2/O, cell uut/controlunit/memory_reg[34][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net uut/controlunit/O40[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[18][7]_i_2/O, cell uut/controlunit/memory_reg[18][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net uut/controlunit/O41[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[32][7]_i_2/O, cell uut/controlunit/memory_reg[32][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net uut/controlunit/O42[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[47][7]_i_2/O, cell uut/controlunit/memory_reg[47][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net uut/controlunit/O43[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[61][7]_i_2/O, cell uut/controlunit/memory_reg[61][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net uut/controlunit/O44[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[59][7]_i_2/O, cell uut/controlunit/memory_reg[59][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net uut/controlunit/O45[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[31][7]_i_2/O, cell uut/controlunit/memory_reg[31][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net uut/controlunit/O46[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[23][7]_i_2/O, cell uut/controlunit/memory_reg[23][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net uut/controlunit/O47[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[45][7]_i_2/O, cell uut/controlunit/memory_reg[45][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net uut/controlunit/O48[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[29][7]_i_2/O, cell uut/controlunit/memory_reg[29][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net uut/controlunit/O49[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[43][7]_i_2/O, cell uut/controlunit/memory_reg[43][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net uut/controlunit/O50[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[46][7]_i_2/O, cell uut/controlunit/memory_reg[46][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net uut/controlunit/O51[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[30][7]_i_2/O, cell uut/controlunit/memory_reg[30][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net uut/controlunit/O52[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[15][7]_i_2/O, cell uut/controlunit/memory_reg[15][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net uut/controlunit/O53[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[12][7]_i_2/O, cell uut/controlunit/memory_reg[12][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net uut/controlunit/O54[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[54][7]_i_2/O, cell uut/controlunit/memory_reg[54][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net uut/controlunit/O55[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[51][7]_i_2/O, cell uut/controlunit/memory_reg[51][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net uut/controlunit/O56[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[17][7]_i_2/O, cell uut/controlunit/memory_reg[17][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net uut/controlunit/O57[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[3][7]_i_2/O, cell uut/controlunit/memory_reg[3][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net uut/controlunit/O58[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[53][7]_i_2/O, cell uut/controlunit/memory_reg[53][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net uut/controlunit/O59[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[56][7]_i_2/O, cell uut/controlunit/memory_reg[56][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net uut/controlunit/O60[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[50][7]_i_2/O, cell uut/controlunit/memory_reg[50][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net uut/controlunit/O61[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[52][7]_i_2/O, cell uut/controlunit/memory_reg[52][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net uut/controlunit/O62[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[25][7]_i_2/O, cell uut/controlunit/memory_reg[25][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net uut/controlunit/O63[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[19][7]_i_2/O, cell uut/controlunit/memory_reg[19][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net uut/controlunit/O64[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[24][7]_i_2/O, cell uut/controlunit/memory_reg[24][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net uut/controlunit/O65[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[22][7]_i_2/O, cell uut/controlunit/memory_reg[22][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net uut/controlunit/O66[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[38][7]_i_2/O, cell uut/controlunit/memory_reg[38][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net uut/controlunit/O67[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[14][7]_i_2/O, cell uut/controlunit/memory_reg[14][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net uut/controlunit/O68[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[7][7]_i_2/O, cell uut/controlunit/memory_reg[7][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net uut/controlunit/O69[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[4][7]_i_2/O, cell uut/controlunit/memory_reg[4][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net uut/controlunit/O70[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[5][7]_i_2/O, cell uut/controlunit/memory_reg[5][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net uut/controlunit/O71[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[10][7]_i_2/O, cell uut/controlunit/memory_reg[10][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net uut/controlunit/O72[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[11][7]_i_2/O, cell uut/controlunit/memory_reg[11][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net uut/controlunit/O73[0] is a gated clock net sourced by a combinational pin uut/controlunit/memory_reg[2][7]_i_2/O, cell uut/controlunit/memory_reg[2][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net uut/controlunit/O80 is a gated clock net sourced by a combinational pin uut/controlunit/DataOut_reg[31]_i_6/O, cell uut/controlunit/DataOut_reg[31]_i_6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net uut/controlunit/n_0_FSM_onehot_nextState_reg[5]_i_2 is a gated clock net sourced by a combinational pin uut/controlunit/FSM_onehot_nextState_reg[5]_i_2/O, cell uut/controlunit/FSM_onehot_nextState_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT U0/num_reg[3]_i_2 is driving clock pin of 4 cells. This could lead to large hold time violations. First few involved cells are:
+    num_reg[0] {LDCE}
+    num_reg[1] {LDCE}
+    num_reg[2] {LDCE}
+    num_reg[3] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[0][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[0][0] {LDCE}
+    uut/dataMem/memory_reg[0][1] {LDCE}
+    uut/dataMem/memory_reg[0][2] {LDCE}
+    uut/dataMem/memory_reg[0][3] {LDCE}
+    uut/dataMem/memory_reg[0][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[13][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[13][0] {LDCE}
+    uut/dataMem/memory_reg[13][1] {LDCE}
+    uut/dataMem/memory_reg[13][2] {LDCE}
+    uut/dataMem/memory_reg[13][3] {LDCE}
+    uut/dataMem/memory_reg[13][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[16][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[16][0] {LDCE}
+    uut/dataMem/memory_reg[16][1] {LDCE}
+    uut/dataMem/memory_reg[16][2] {LDCE}
+    uut/dataMem/memory_reg[16][3] {LDCE}
+    uut/dataMem/memory_reg[16][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[1][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[1][0] {LDCE}
+    uut/dataMem/memory_reg[1][1] {LDCE}
+    uut/dataMem/memory_reg[1][2] {LDCE}
+    uut/dataMem/memory_reg[1][3] {LDCE}
+    uut/dataMem/memory_reg[1][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[21][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[21][0] {LDCE}
+    uut/dataMem/memory_reg[21][1] {LDCE}
+    uut/dataMem/memory_reg[21][2] {LDCE}
+    uut/dataMem/memory_reg[21][3] {LDCE}
+    uut/dataMem/memory_reg[21][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[26][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[26][0] {LDCE}
+    uut/dataMem/memory_reg[26][1] {LDCE}
+    uut/dataMem/memory_reg[26][2] {LDCE}
+    uut/dataMem/memory_reg[26][3] {LDCE}
+    uut/dataMem/memory_reg[26][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[27][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[27][0] {LDCE}
+    uut/dataMem/memory_reg[27][1] {LDCE}
+    uut/dataMem/memory_reg[27][2] {LDCE}
+    uut/dataMem/memory_reg[27][3] {LDCE}
+    uut/dataMem/memory_reg[27][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[28][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[28][0] {LDCE}
+    uut/dataMem/memory_reg[28][1] {LDCE}
+    uut/dataMem/memory_reg[28][2] {LDCE}
+    uut/dataMem/memory_reg[28][3] {LDCE}
+    uut/dataMem/memory_reg[28][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[33][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[33][0] {LDCE}
+    uut/dataMem/memory_reg[33][1] {LDCE}
+    uut/dataMem/memory_reg[33][2] {LDCE}
+    uut/dataMem/memory_reg[33][3] {LDCE}
+    uut/dataMem/memory_reg[33][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[35][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[35][0] {LDCE}
+    uut/dataMem/memory_reg[35][1] {LDCE}
+    uut/dataMem/memory_reg[35][2] {LDCE}
+    uut/dataMem/memory_reg[35][3] {LDCE}
+    uut/dataMem/memory_reg[35][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#12 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[37][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[37][0] {LDCE}
+    uut/dataMem/memory_reg[37][1] {LDCE}
+    uut/dataMem/memory_reg[37][2] {LDCE}
+    uut/dataMem/memory_reg[37][3] {LDCE}
+    uut/dataMem/memory_reg[37][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#13 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[39][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[39][0] {LDCE}
+    uut/dataMem/memory_reg[39][1] {LDCE}
+    uut/dataMem/memory_reg[39][2] {LDCE}
+    uut/dataMem/memory_reg[39][3] {LDCE}
+    uut/dataMem/memory_reg[39][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#14 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[40][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[40][0] {LDCE}
+    uut/dataMem/memory_reg[40][1] {LDCE}
+    uut/dataMem/memory_reg[40][2] {LDCE}
+    uut/dataMem/memory_reg[40][3] {LDCE}
+    uut/dataMem/memory_reg[40][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#15 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[41][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[41][0] {LDCE}
+    uut/dataMem/memory_reg[41][1] {LDCE}
+    uut/dataMem/memory_reg[41][2] {LDCE}
+    uut/dataMem/memory_reg[41][3] {LDCE}
+    uut/dataMem/memory_reg[41][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#16 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[42][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[42][0] {LDCE}
+    uut/dataMem/memory_reg[42][1] {LDCE}
+    uut/dataMem/memory_reg[42][2] {LDCE}
+    uut/dataMem/memory_reg[42][3] {LDCE}
+    uut/dataMem/memory_reg[42][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#17 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[44][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[44][0] {LDCE}
+    uut/dataMem/memory_reg[44][1] {LDCE}
+    uut/dataMem/memory_reg[44][2] {LDCE}
+    uut/dataMem/memory_reg[44][3] {LDCE}
+    uut/dataMem/memory_reg[44][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#18 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[49][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[49][0] {LDCE}
+    uut/dataMem/memory_reg[49][1] {LDCE}
+    uut/dataMem/memory_reg[49][2] {LDCE}
+    uut/dataMem/memory_reg[49][3] {LDCE}
+    uut/dataMem/memory_reg[49][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#19 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[55][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[55][0] {LDCE}
+    uut/dataMem/memory_reg[55][1] {LDCE}
+    uut/dataMem/memory_reg[55][2] {LDCE}
+    uut/dataMem/memory_reg[55][3] {LDCE}
+    uut/dataMem/memory_reg[55][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#20 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[57][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[57][0] {LDCE}
+    uut/dataMem/memory_reg[57][1] {LDCE}
+    uut/dataMem/memory_reg[57][2] {LDCE}
+    uut/dataMem/memory_reg[57][3] {LDCE}
+    uut/dataMem/memory_reg[57][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#21 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[58][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[58][0] {LDCE}
+    uut/dataMem/memory_reg[58][1] {LDCE}
+    uut/dataMem/memory_reg[58][2] {LDCE}
+    uut/dataMem/memory_reg[58][3] {LDCE}
+    uut/dataMem/memory_reg[58][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#22 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[60][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[60][0] {LDCE}
+    uut/dataMem/memory_reg[60][1] {LDCE}
+    uut/dataMem/memory_reg[60][2] {LDCE}
+    uut/dataMem/memory_reg[60][3] {LDCE}
+    uut/dataMem/memory_reg[60][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#23 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[62][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[62][0] {LDCE}
+    uut/dataMem/memory_reg[62][1] {LDCE}
+    uut/dataMem/memory_reg[62][2] {LDCE}
+    uut/dataMem/memory_reg[62][3] {LDCE}
+    uut/dataMem/memory_reg[62][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#24 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[63][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[63][0] {LDCE}
+    uut/dataMem/memory_reg[63][1] {LDCE}
+    uut/dataMem/memory_reg[63][2] {LDCE}
+    uut/dataMem/memory_reg[63][3] {LDCE}
+    uut/dataMem/memory_reg[63][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#25 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/ALUoutDR/memory_reg[8][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[8][0] {LDCE}
+    uut/dataMem/memory_reg[8][1] {LDCE}
+    uut/dataMem/memory_reg[8][2] {LDCE}
+    uut/dataMem/memory_reg[8][3] {LDCE}
+    uut/dataMem/memory_reg[8][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#26 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/DataOut_reg[31]_i_6 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/DataOut_reg[10] {LDCE}
+    uut/dataMem/DataOut_reg[11] {LDCE}
+    uut/dataMem/DataOut_reg[12] {LDCE}
+    uut/dataMem/DataOut_reg[13] {LDCE}
+    uut/dataMem/DataOut_reg[14] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#27 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/FSM_onehot_nextState_reg[5]_i_2 is driving clock pin of 5 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/controlunit/FSM_onehot_nextState_reg[0] {LDCE}
+    uut/controlunit/FSM_onehot_nextState_reg[1] {LDCE}
+    uut/controlunit/FSM_onehot_nextState_reg[3] {LDCE}
+    uut/controlunit/FSM_onehot_nextState_reg[4] {LDCE}
+    uut/controlunit/FSM_onehot_nextState_reg[5] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#28 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[10][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[10][0] {LDCE}
+    uut/dataMem/memory_reg[10][1] {LDCE}
+    uut/dataMem/memory_reg[10][2] {LDCE}
+    uut/dataMem/memory_reg[10][3] {LDCE}
+    uut/dataMem/memory_reg[10][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#29 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[11][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[11][0] {LDCE}
+    uut/dataMem/memory_reg[11][1] {LDCE}
+    uut/dataMem/memory_reg[11][2] {LDCE}
+    uut/dataMem/memory_reg[11][3] {LDCE}
+    uut/dataMem/memory_reg[11][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#30 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[12][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[12][0] {LDCE}
+    uut/dataMem/memory_reg[12][1] {LDCE}
+    uut/dataMem/memory_reg[12][2] {LDCE}
+    uut/dataMem/memory_reg[12][3] {LDCE}
+    uut/dataMem/memory_reg[12][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#31 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[14][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[14][0] {LDCE}
+    uut/dataMem/memory_reg[14][1] {LDCE}
+    uut/dataMem/memory_reg[14][2] {LDCE}
+    uut/dataMem/memory_reg[14][3] {LDCE}
+    uut/dataMem/memory_reg[14][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#32 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[15][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[15][0] {LDCE}
+    uut/dataMem/memory_reg[15][1] {LDCE}
+    uut/dataMem/memory_reg[15][2] {LDCE}
+    uut/dataMem/memory_reg[15][3] {LDCE}
+    uut/dataMem/memory_reg[15][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#33 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[17][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[17][0] {LDCE}
+    uut/dataMem/memory_reg[17][1] {LDCE}
+    uut/dataMem/memory_reg[17][2] {LDCE}
+    uut/dataMem/memory_reg[17][3] {LDCE}
+    uut/dataMem/memory_reg[17][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#34 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[18][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[18][0] {LDCE}
+    uut/dataMem/memory_reg[18][1] {LDCE}
+    uut/dataMem/memory_reg[18][2] {LDCE}
+    uut/dataMem/memory_reg[18][3] {LDCE}
+    uut/dataMem/memory_reg[18][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#35 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[19][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[19][0] {LDCE}
+    uut/dataMem/memory_reg[19][1] {LDCE}
+    uut/dataMem/memory_reg[19][2] {LDCE}
+    uut/dataMem/memory_reg[19][3] {LDCE}
+    uut/dataMem/memory_reg[19][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#36 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[20][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[20][0] {LDCE}
+    uut/dataMem/memory_reg[20][1] {LDCE}
+    uut/dataMem/memory_reg[20][2] {LDCE}
+    uut/dataMem/memory_reg[20][3] {LDCE}
+    uut/dataMem/memory_reg[20][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#37 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[22][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[22][0] {LDCE}
+    uut/dataMem/memory_reg[22][1] {LDCE}
+    uut/dataMem/memory_reg[22][2] {LDCE}
+    uut/dataMem/memory_reg[22][3] {LDCE}
+    uut/dataMem/memory_reg[22][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#38 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[23][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[23][0] {LDCE}
+    uut/dataMem/memory_reg[23][1] {LDCE}
+    uut/dataMem/memory_reg[23][2] {LDCE}
+    uut/dataMem/memory_reg[23][3] {LDCE}
+    uut/dataMem/memory_reg[23][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#39 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[24][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[24][0] {LDCE}
+    uut/dataMem/memory_reg[24][1] {LDCE}
+    uut/dataMem/memory_reg[24][2] {LDCE}
+    uut/dataMem/memory_reg[24][3] {LDCE}
+    uut/dataMem/memory_reg[24][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#40 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[25][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[25][0] {LDCE}
+    uut/dataMem/memory_reg[25][1] {LDCE}
+    uut/dataMem/memory_reg[25][2] {LDCE}
+    uut/dataMem/memory_reg[25][3] {LDCE}
+    uut/dataMem/memory_reg[25][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#41 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[29][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[29][0] {LDCE}
+    uut/dataMem/memory_reg[29][1] {LDCE}
+    uut/dataMem/memory_reg[29][2] {LDCE}
+    uut/dataMem/memory_reg[29][3] {LDCE}
+    uut/dataMem/memory_reg[29][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#42 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[2][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[2][0] {LDCE}
+    uut/dataMem/memory_reg[2][1] {LDCE}
+    uut/dataMem/memory_reg[2][2] {LDCE}
+    uut/dataMem/memory_reg[2][3] {LDCE}
+    uut/dataMem/memory_reg[2][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#43 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[30][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[30][0] {LDCE}
+    uut/dataMem/memory_reg[30][1] {LDCE}
+    uut/dataMem/memory_reg[30][2] {LDCE}
+    uut/dataMem/memory_reg[30][3] {LDCE}
+    uut/dataMem/memory_reg[30][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#44 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[31][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[31][0] {LDCE}
+    uut/dataMem/memory_reg[31][1] {LDCE}
+    uut/dataMem/memory_reg[31][2] {LDCE}
+    uut/dataMem/memory_reg[31][3] {LDCE}
+    uut/dataMem/memory_reg[31][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#45 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[32][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[32][0] {LDCE}
+    uut/dataMem/memory_reg[32][1] {LDCE}
+    uut/dataMem/memory_reg[32][2] {LDCE}
+    uut/dataMem/memory_reg[32][3] {LDCE}
+    uut/dataMem/memory_reg[32][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#46 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[34][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[34][0] {LDCE}
+    uut/dataMem/memory_reg[34][1] {LDCE}
+    uut/dataMem/memory_reg[34][2] {LDCE}
+    uut/dataMem/memory_reg[34][3] {LDCE}
+    uut/dataMem/memory_reg[34][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#47 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[36][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[36][0] {LDCE}
+    uut/dataMem/memory_reg[36][1] {LDCE}
+    uut/dataMem/memory_reg[36][2] {LDCE}
+    uut/dataMem/memory_reg[36][3] {LDCE}
+    uut/dataMem/memory_reg[36][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#48 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[38][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[38][0] {LDCE}
+    uut/dataMem/memory_reg[38][1] {LDCE}
+    uut/dataMem/memory_reg[38][2] {LDCE}
+    uut/dataMem/memory_reg[38][3] {LDCE}
+    uut/dataMem/memory_reg[38][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#49 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[3][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[3][0] {LDCE}
+    uut/dataMem/memory_reg[3][1] {LDCE}
+    uut/dataMem/memory_reg[3][2] {LDCE}
+    uut/dataMem/memory_reg[3][3] {LDCE}
+    uut/dataMem/memory_reg[3][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#50 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[43][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[43][0] {LDCE}
+    uut/dataMem/memory_reg[43][1] {LDCE}
+    uut/dataMem/memory_reg[43][2] {LDCE}
+    uut/dataMem/memory_reg[43][3] {LDCE}
+    uut/dataMem/memory_reg[43][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#51 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[45][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[45][0] {LDCE}
+    uut/dataMem/memory_reg[45][1] {LDCE}
+    uut/dataMem/memory_reg[45][2] {LDCE}
+    uut/dataMem/memory_reg[45][3] {LDCE}
+    uut/dataMem/memory_reg[45][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#52 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[46][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[46][0] {LDCE}
+    uut/dataMem/memory_reg[46][1] {LDCE}
+    uut/dataMem/memory_reg[46][2] {LDCE}
+    uut/dataMem/memory_reg[46][3] {LDCE}
+    uut/dataMem/memory_reg[46][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#53 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[47][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[47][0] {LDCE}
+    uut/dataMem/memory_reg[47][1] {LDCE}
+    uut/dataMem/memory_reg[47][2] {LDCE}
+    uut/dataMem/memory_reg[47][3] {LDCE}
+    uut/dataMem/memory_reg[47][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#54 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[48][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[48][0] {LDCE}
+    uut/dataMem/memory_reg[48][1] {LDCE}
+    uut/dataMem/memory_reg[48][2] {LDCE}
+    uut/dataMem/memory_reg[48][3] {LDCE}
+    uut/dataMem/memory_reg[48][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#55 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[4][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[4][0] {LDCE}
+    uut/dataMem/memory_reg[4][1] {LDCE}
+    uut/dataMem/memory_reg[4][2] {LDCE}
+    uut/dataMem/memory_reg[4][3] {LDCE}
+    uut/dataMem/memory_reg[4][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#56 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[50][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[50][0] {LDCE}
+    uut/dataMem/memory_reg[50][1] {LDCE}
+    uut/dataMem/memory_reg[50][2] {LDCE}
+    uut/dataMem/memory_reg[50][3] {LDCE}
+    uut/dataMem/memory_reg[50][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#57 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[51][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[51][0] {LDCE}
+    uut/dataMem/memory_reg[51][1] {LDCE}
+    uut/dataMem/memory_reg[51][2] {LDCE}
+    uut/dataMem/memory_reg[51][3] {LDCE}
+    uut/dataMem/memory_reg[51][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#58 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[52][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[52][0] {LDCE}
+    uut/dataMem/memory_reg[52][1] {LDCE}
+    uut/dataMem/memory_reg[52][2] {LDCE}
+    uut/dataMem/memory_reg[52][3] {LDCE}
+    uut/dataMem/memory_reg[52][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#59 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[53][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[53][0] {LDCE}
+    uut/dataMem/memory_reg[53][1] {LDCE}
+    uut/dataMem/memory_reg[53][2] {LDCE}
+    uut/dataMem/memory_reg[53][3] {LDCE}
+    uut/dataMem/memory_reg[53][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#60 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[54][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[54][5] {LDCE}
+    uut/dataMem/memory_reg[54][6] {LDCE}
+    uut/dataMem/memory_reg[54][7] {LDCE}
+    uut/dataMem/memory_reg[54][0] {LDCE}
+    uut/dataMem/memory_reg[54][1] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#61 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[56][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[56][0] {LDCE}
+    uut/dataMem/memory_reg[56][1] {LDCE}
+    uut/dataMem/memory_reg[56][2] {LDCE}
+    uut/dataMem/memory_reg[56][3] {LDCE}
+    uut/dataMem/memory_reg[56][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#62 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[59][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[59][0] {LDCE}
+    uut/dataMem/memory_reg[59][1] {LDCE}
+    uut/dataMem/memory_reg[59][2] {LDCE}
+    uut/dataMem/memory_reg[59][3] {LDCE}
+    uut/dataMem/memory_reg[59][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#63 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[5][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[5][0] {LDCE}
+    uut/dataMem/memory_reg[5][1] {LDCE}
+    uut/dataMem/memory_reg[5][2] {LDCE}
+    uut/dataMem/memory_reg[5][3] {LDCE}
+    uut/dataMem/memory_reg[5][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#64 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[61][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[61][0] {LDCE}
+    uut/dataMem/memory_reg[61][1] {LDCE}
+    uut/dataMem/memory_reg[61][2] {LDCE}
+    uut/dataMem/memory_reg[61][3] {LDCE}
+    uut/dataMem/memory_reg[61][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#65 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[6][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[6][0] {LDCE}
+    uut/dataMem/memory_reg[6][1] {LDCE}
+    uut/dataMem/memory_reg[6][2] {LDCE}
+    uut/dataMem/memory_reg[6][3] {LDCE}
+    uut/dataMem/memory_reg[6][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#66 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[7][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[7][0] {LDCE}
+    uut/dataMem/memory_reg[7][1] {LDCE}
+    uut/dataMem/memory_reg[7][2] {LDCE}
+    uut/dataMem/memory_reg[7][3] {LDCE}
+    uut/dataMem/memory_reg[7][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#67 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/memory_reg[9][7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/dataMem/memory_reg[9][0] {LDCE}
+    uut/dataMem/memory_reg[9][1] {LDCE}
+    uut/dataMem/memory_reg[9][2] {LDCE}
+    uut/dataMem/memory_reg[9][3] {LDCE}
+    uut/dataMem/memory_reg[9][4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#68 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/controlunit/temp_reg[31]_i_3 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+    uut/insMem/temp_reg[0] {LDCE}
+    uut/insMem/temp_reg[10] {LDCE}
+    uut/insMem/temp_reg[11] {LDCE}
+    uut/insMem/temp_reg[12] {LDCE}
+    uut/insMem/temp_reg[13] {LDCE}
+
+Related violations: <none>
+
+

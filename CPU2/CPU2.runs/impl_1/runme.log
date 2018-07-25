@@ -1,0 +1,849 @@
+
+*** Running vivado
+    with args -log display_cpu2.vdi -applog -m64 -messageDb vivado.pb -mode batch -source display_cpu2.tcl -notrace
+
+
+****** Vivado v2014.2 (64-bit)
+  **** SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+  **** IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source display_cpu2.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Xilinx/Vivado/CPU2/CPU2.srcs/constrs_1/new/display_cpu2.xdc]
+Finished Parsing XDC File [C:/Xilinx/Vivado/CPU2/CPU2.srcs/constrs_1/new/display_cpu2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 476.266 ; gain = 281.938
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 476.266 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: f4a3d1b7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.147 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 148 cells.
+Phase 2 Constant Propagation | Checksum: 16eabd87a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.357 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 375 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1e6be7376
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.593 . Memory (MB): peak = 856.320 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1e6be7376
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.612 . Memory (MB): peak = 856.320 ; gain = 0.000
+Implement Debug Cores | Checksum: 1cde9e65a
+Logic Optimization | Checksum: 1cde9e65a
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Will skip clock gating for clocks with period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 1e6be7376
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 856.320 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 856.320 ; gain = 380.055
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.176 . Memory (MB): peak = 856.320 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 10bad7fd7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.1 Mandatory Logic Optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 856.320 ; gain = 0.000
+Phase 2.1.1 Mandatory Logic Optimization | Checksum: 7e4c6d7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.2 Build Super Logic Region (SLR) Database
+Phase 2.1.2 Build Super Logic Region (SLR) Database | Checksum: 7e4c6d7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.3 Add Constraints
+Phase 2.1.3 Add Constraints | Checksum: 7e4c6d7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.4 Build Shapes/ HD Config
+
+Phase 2.1.4.1 Build Macros
+Phase 2.1.4.1 Build Macros | Checksum: 146c45a7b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.395 . Memory (MB): peak = 856.320 ; gain = 0.000
+Phase 2.1.4 Build Shapes/ HD Config | Checksum: 146c45a7b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.397 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.5 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.5.1 Pre-Place Cells
+Phase 2.1.5.1 Pre-Place Cells | Checksum: 7e4c6d7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.412 . Memory (MB): peak = 856.320 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'U0/num_reg[3]_i_2' is driving clock pin of 4 registers. This could lead to large hold time violations. First few involved registers are:
+	num_reg[0] {LDCE}
+	num_reg[1] {LDCE}
+	num_reg[2] {LDCE}
+	num_reg[3] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[13][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[13][0] {LDCE}
+	uut/dataMem/memory_reg[13][1] {LDCE}
+	uut/dataMem/memory_reg[13][2] {LDCE}
+	uut/dataMem/memory_reg[13][3] {LDCE}
+	uut/dataMem/memory_reg[13][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[0][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[0][0] {LDCE}
+	uut/dataMem/memory_reg[0][1] {LDCE}
+	uut/dataMem/memory_reg[0][2] {LDCE}
+	uut/dataMem/memory_reg[0][3] {LDCE}
+	uut/dataMem/memory_reg[0][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[16][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[16][0] {LDCE}
+	uut/dataMem/memory_reg[16][1] {LDCE}
+	uut/dataMem/memory_reg[16][2] {LDCE}
+	uut/dataMem/memory_reg[16][3] {LDCE}
+	uut/dataMem/memory_reg[16][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[1][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[1][0] {LDCE}
+	uut/dataMem/memory_reg[1][1] {LDCE}
+	uut/dataMem/memory_reg[1][2] {LDCE}
+	uut/dataMem/memory_reg[1][3] {LDCE}
+	uut/dataMem/memory_reg[1][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[21][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[21][0] {LDCE}
+	uut/dataMem/memory_reg[21][1] {LDCE}
+	uut/dataMem/memory_reg[21][2] {LDCE}
+	uut/dataMem/memory_reg[21][3] {LDCE}
+	uut/dataMem/memory_reg[21][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[26][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[26][0] {LDCE}
+	uut/dataMem/memory_reg[26][1] {LDCE}
+	uut/dataMem/memory_reg[26][2] {LDCE}
+	uut/dataMem/memory_reg[26][3] {LDCE}
+	uut/dataMem/memory_reg[26][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[27][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[27][0] {LDCE}
+	uut/dataMem/memory_reg[27][1] {LDCE}
+	uut/dataMem/memory_reg[27][2] {LDCE}
+	uut/dataMem/memory_reg[27][3] {LDCE}
+	uut/dataMem/memory_reg[27][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[28][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[28][0] {LDCE}
+	uut/dataMem/memory_reg[28][1] {LDCE}
+	uut/dataMem/memory_reg[28][2] {LDCE}
+	uut/dataMem/memory_reg[28][3] {LDCE}
+	uut/dataMem/memory_reg[28][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[33][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[33][0] {LDCE}
+	uut/dataMem/memory_reg[33][1] {LDCE}
+	uut/dataMem/memory_reg[33][2] {LDCE}
+	uut/dataMem/memory_reg[33][3] {LDCE}
+	uut/dataMem/memory_reg[33][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[35][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[35][0] {LDCE}
+	uut/dataMem/memory_reg[35][1] {LDCE}
+	uut/dataMem/memory_reg[35][2] {LDCE}
+	uut/dataMem/memory_reg[35][3] {LDCE}
+	uut/dataMem/memory_reg[35][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[37][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[37][0] {LDCE}
+	uut/dataMem/memory_reg[37][1] {LDCE}
+	uut/dataMem/memory_reg[37][2] {LDCE}
+	uut/dataMem/memory_reg[37][3] {LDCE}
+	uut/dataMem/memory_reg[37][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[39][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[39][0] {LDCE}
+	uut/dataMem/memory_reg[39][1] {LDCE}
+	uut/dataMem/memory_reg[39][2] {LDCE}
+	uut/dataMem/memory_reg[39][3] {LDCE}
+	uut/dataMem/memory_reg[39][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[40][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[40][0] {LDCE}
+	uut/dataMem/memory_reg[40][1] {LDCE}
+	uut/dataMem/memory_reg[40][2] {LDCE}
+	uut/dataMem/memory_reg[40][3] {LDCE}
+	uut/dataMem/memory_reg[40][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[41][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[41][0] {LDCE}
+	uut/dataMem/memory_reg[41][1] {LDCE}
+	uut/dataMem/memory_reg[41][2] {LDCE}
+	uut/dataMem/memory_reg[41][3] {LDCE}
+	uut/dataMem/memory_reg[41][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[42][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[42][0] {LDCE}
+	uut/dataMem/memory_reg[42][1] {LDCE}
+	uut/dataMem/memory_reg[42][2] {LDCE}
+	uut/dataMem/memory_reg[42][3] {LDCE}
+	uut/dataMem/memory_reg[42][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[44][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[44][0] {LDCE}
+	uut/dataMem/memory_reg[44][1] {LDCE}
+	uut/dataMem/memory_reg[44][2] {LDCE}
+	uut/dataMem/memory_reg[44][3] {LDCE}
+	uut/dataMem/memory_reg[44][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[49][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[49][0] {LDCE}
+	uut/dataMem/memory_reg[49][1] {LDCE}
+	uut/dataMem/memory_reg[49][2] {LDCE}
+	uut/dataMem/memory_reg[49][3] {LDCE}
+	uut/dataMem/memory_reg[49][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[55][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[55][0] {LDCE}
+	uut/dataMem/memory_reg[55][1] {LDCE}
+	uut/dataMem/memory_reg[55][2] {LDCE}
+	uut/dataMem/memory_reg[55][3] {LDCE}
+	uut/dataMem/memory_reg[55][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[57][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[57][0] {LDCE}
+	uut/dataMem/memory_reg[57][1] {LDCE}
+	uut/dataMem/memory_reg[57][2] {LDCE}
+	uut/dataMem/memory_reg[57][3] {LDCE}
+	uut/dataMem/memory_reg[57][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[58][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[58][0] {LDCE}
+	uut/dataMem/memory_reg[58][1] {LDCE}
+	uut/dataMem/memory_reg[58][2] {LDCE}
+	uut/dataMem/memory_reg[58][3] {LDCE}
+	uut/dataMem/memory_reg[58][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[60][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[60][0] {LDCE}
+	uut/dataMem/memory_reg[60][1] {LDCE}
+	uut/dataMem/memory_reg[60][2] {LDCE}
+	uut/dataMem/memory_reg[60][3] {LDCE}
+	uut/dataMem/memory_reg[60][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[62][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[62][0] {LDCE}
+	uut/dataMem/memory_reg[62][1] {LDCE}
+	uut/dataMem/memory_reg[62][2] {LDCE}
+	uut/dataMem/memory_reg[62][3] {LDCE}
+	uut/dataMem/memory_reg[62][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[63][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[63][0] {LDCE}
+	uut/dataMem/memory_reg[63][1] {LDCE}
+	uut/dataMem/memory_reg[63][2] {LDCE}
+	uut/dataMem/memory_reg[63][3] {LDCE}
+	uut/dataMem/memory_reg[63][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/ALUoutDR/memory_reg[8][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[8][0] {LDCE}
+	uut/dataMem/memory_reg[8][1] {LDCE}
+	uut/dataMem/memory_reg[8][2] {LDCE}
+	uut/dataMem/memory_reg[8][3] {LDCE}
+	uut/dataMem/memory_reg[8][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/DataOut_reg[31]_i_6' is driving clock pin of 32 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/DataOut_reg[10] {LDCE}
+	uut/dataMem/DataOut_reg[11] {LDCE}
+	uut/dataMem/DataOut_reg[12] {LDCE}
+	uut/dataMem/DataOut_reg[13] {LDCE}
+	uut/dataMem/DataOut_reg[14] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/FSM_onehot_nextState_reg[5]_i_2' is driving clock pin of 5 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/controlunit/FSM_onehot_nextState_reg[0] {LDCE}
+	uut/controlunit/FSM_onehot_nextState_reg[1] {LDCE}
+	uut/controlunit/FSM_onehot_nextState_reg[3] {LDCE}
+	uut/controlunit/FSM_onehot_nextState_reg[4] {LDCE}
+	uut/controlunit/FSM_onehot_nextState_reg[5] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[10][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[10][0] {LDCE}
+	uut/dataMem/memory_reg[10][1] {LDCE}
+	uut/dataMem/memory_reg[10][2] {LDCE}
+	uut/dataMem/memory_reg[10][3] {LDCE}
+	uut/dataMem/memory_reg[10][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[11][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[11][0] {LDCE}
+	uut/dataMem/memory_reg[11][1] {LDCE}
+	uut/dataMem/memory_reg[11][2] {LDCE}
+	uut/dataMem/memory_reg[11][3] {LDCE}
+	uut/dataMem/memory_reg[11][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[12][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[12][0] {LDCE}
+	uut/dataMem/memory_reg[12][1] {LDCE}
+	uut/dataMem/memory_reg[12][2] {LDCE}
+	uut/dataMem/memory_reg[12][3] {LDCE}
+	uut/dataMem/memory_reg[12][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[14][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[14][0] {LDCE}
+	uut/dataMem/memory_reg[14][1] {LDCE}
+	uut/dataMem/memory_reg[14][2] {LDCE}
+	uut/dataMem/memory_reg[14][3] {LDCE}
+	uut/dataMem/memory_reg[14][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[15][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[15][0] {LDCE}
+	uut/dataMem/memory_reg[15][1] {LDCE}
+	uut/dataMem/memory_reg[15][2] {LDCE}
+	uut/dataMem/memory_reg[15][3] {LDCE}
+	uut/dataMem/memory_reg[15][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[17][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[17][0] {LDCE}
+	uut/dataMem/memory_reg[17][1] {LDCE}
+	uut/dataMem/memory_reg[17][2] {LDCE}
+	uut/dataMem/memory_reg[17][3] {LDCE}
+	uut/dataMem/memory_reg[17][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[18][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[18][0] {LDCE}
+	uut/dataMem/memory_reg[18][1] {LDCE}
+	uut/dataMem/memory_reg[18][2] {LDCE}
+	uut/dataMem/memory_reg[18][3] {LDCE}
+	uut/dataMem/memory_reg[18][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[19][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[19][0] {LDCE}
+	uut/dataMem/memory_reg[19][1] {LDCE}
+	uut/dataMem/memory_reg[19][2] {LDCE}
+	uut/dataMem/memory_reg[19][3] {LDCE}
+	uut/dataMem/memory_reg[19][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[20][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[20][0] {LDCE}
+	uut/dataMem/memory_reg[20][1] {LDCE}
+	uut/dataMem/memory_reg[20][2] {LDCE}
+	uut/dataMem/memory_reg[20][3] {LDCE}
+	uut/dataMem/memory_reg[20][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[22][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[22][0] {LDCE}
+	uut/dataMem/memory_reg[22][1] {LDCE}
+	uut/dataMem/memory_reg[22][2] {LDCE}
+	uut/dataMem/memory_reg[22][3] {LDCE}
+	uut/dataMem/memory_reg[22][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[23][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[23][0] {LDCE}
+	uut/dataMem/memory_reg[23][1] {LDCE}
+	uut/dataMem/memory_reg[23][2] {LDCE}
+	uut/dataMem/memory_reg[23][3] {LDCE}
+	uut/dataMem/memory_reg[23][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[24][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[24][0] {LDCE}
+	uut/dataMem/memory_reg[24][1] {LDCE}
+	uut/dataMem/memory_reg[24][2] {LDCE}
+	uut/dataMem/memory_reg[24][3] {LDCE}
+	uut/dataMem/memory_reg[24][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[25][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[25][0] {LDCE}
+	uut/dataMem/memory_reg[25][1] {LDCE}
+	uut/dataMem/memory_reg[25][2] {LDCE}
+	uut/dataMem/memory_reg[25][3] {LDCE}
+	uut/dataMem/memory_reg[25][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[29][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[29][0] {LDCE}
+	uut/dataMem/memory_reg[29][1] {LDCE}
+	uut/dataMem/memory_reg[29][2] {LDCE}
+	uut/dataMem/memory_reg[29][3] {LDCE}
+	uut/dataMem/memory_reg[29][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[2][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[2][0] {LDCE}
+	uut/dataMem/memory_reg[2][1] {LDCE}
+	uut/dataMem/memory_reg[2][2] {LDCE}
+	uut/dataMem/memory_reg[2][3] {LDCE}
+	uut/dataMem/memory_reg[2][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[30][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[30][0] {LDCE}
+	uut/dataMem/memory_reg[30][1] {LDCE}
+	uut/dataMem/memory_reg[30][2] {LDCE}
+	uut/dataMem/memory_reg[30][3] {LDCE}
+	uut/dataMem/memory_reg[30][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[31][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[31][0] {LDCE}
+	uut/dataMem/memory_reg[31][1] {LDCE}
+	uut/dataMem/memory_reg[31][2] {LDCE}
+	uut/dataMem/memory_reg[31][3] {LDCE}
+	uut/dataMem/memory_reg[31][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[32][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[32][0] {LDCE}
+	uut/dataMem/memory_reg[32][1] {LDCE}
+	uut/dataMem/memory_reg[32][2] {LDCE}
+	uut/dataMem/memory_reg[32][3] {LDCE}
+	uut/dataMem/memory_reg[32][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[34][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[34][0] {LDCE}
+	uut/dataMem/memory_reg[34][1] {LDCE}
+	uut/dataMem/memory_reg[34][2] {LDCE}
+	uut/dataMem/memory_reg[34][3] {LDCE}
+	uut/dataMem/memory_reg[34][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[36][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[36][0] {LDCE}
+	uut/dataMem/memory_reg[36][1] {LDCE}
+	uut/dataMem/memory_reg[36][2] {LDCE}
+	uut/dataMem/memory_reg[36][3] {LDCE}
+	uut/dataMem/memory_reg[36][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[38][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[38][0] {LDCE}
+	uut/dataMem/memory_reg[38][1] {LDCE}
+	uut/dataMem/memory_reg[38][2] {LDCE}
+	uut/dataMem/memory_reg[38][3] {LDCE}
+	uut/dataMem/memory_reg[38][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[3][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[3][0] {LDCE}
+	uut/dataMem/memory_reg[3][1] {LDCE}
+	uut/dataMem/memory_reg[3][2] {LDCE}
+	uut/dataMem/memory_reg[3][3] {LDCE}
+	uut/dataMem/memory_reg[3][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[43][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[43][0] {LDCE}
+	uut/dataMem/memory_reg[43][1] {LDCE}
+	uut/dataMem/memory_reg[43][2] {LDCE}
+	uut/dataMem/memory_reg[43][3] {LDCE}
+	uut/dataMem/memory_reg[43][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[45][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[45][0] {LDCE}
+	uut/dataMem/memory_reg[45][1] {LDCE}
+	uut/dataMem/memory_reg[45][2] {LDCE}
+	uut/dataMem/memory_reg[45][3] {LDCE}
+	uut/dataMem/memory_reg[45][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[46][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[46][0] {LDCE}
+	uut/dataMem/memory_reg[46][1] {LDCE}
+	uut/dataMem/memory_reg[46][2] {LDCE}
+	uut/dataMem/memory_reg[46][3] {LDCE}
+	uut/dataMem/memory_reg[46][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[47][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[47][0] {LDCE}
+	uut/dataMem/memory_reg[47][1] {LDCE}
+	uut/dataMem/memory_reg[47][2] {LDCE}
+	uut/dataMem/memory_reg[47][3] {LDCE}
+	uut/dataMem/memory_reg[47][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[48][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[48][0] {LDCE}
+	uut/dataMem/memory_reg[48][1] {LDCE}
+	uut/dataMem/memory_reg[48][2] {LDCE}
+	uut/dataMem/memory_reg[48][3] {LDCE}
+	uut/dataMem/memory_reg[48][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[4][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[4][0] {LDCE}
+	uut/dataMem/memory_reg[4][1] {LDCE}
+	uut/dataMem/memory_reg[4][2] {LDCE}
+	uut/dataMem/memory_reg[4][3] {LDCE}
+	uut/dataMem/memory_reg[4][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[50][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[50][0] {LDCE}
+	uut/dataMem/memory_reg[50][1] {LDCE}
+	uut/dataMem/memory_reg[50][2] {LDCE}
+	uut/dataMem/memory_reg[50][3] {LDCE}
+	uut/dataMem/memory_reg[50][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[51][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[51][0] {LDCE}
+	uut/dataMem/memory_reg[51][1] {LDCE}
+	uut/dataMem/memory_reg[51][2] {LDCE}
+	uut/dataMem/memory_reg[51][3] {LDCE}
+	uut/dataMem/memory_reg[51][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[52][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[52][0] {LDCE}
+	uut/dataMem/memory_reg[52][1] {LDCE}
+	uut/dataMem/memory_reg[52][2] {LDCE}
+	uut/dataMem/memory_reg[52][3] {LDCE}
+	uut/dataMem/memory_reg[52][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[53][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[53][0] {LDCE}
+	uut/dataMem/memory_reg[53][1] {LDCE}
+	uut/dataMem/memory_reg[53][2] {LDCE}
+	uut/dataMem/memory_reg[53][3] {LDCE}
+	uut/dataMem/memory_reg[53][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[54][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[54][5] {LDCE}
+	uut/dataMem/memory_reg[54][6] {LDCE}
+	uut/dataMem/memory_reg[54][7] {LDCE}
+	uut/dataMem/memory_reg[54][0] {LDCE}
+	uut/dataMem/memory_reg[54][1] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[56][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[56][0] {LDCE}
+	uut/dataMem/memory_reg[56][1] {LDCE}
+	uut/dataMem/memory_reg[56][2] {LDCE}
+	uut/dataMem/memory_reg[56][3] {LDCE}
+	uut/dataMem/memory_reg[56][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[59][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[59][0] {LDCE}
+	uut/dataMem/memory_reg[59][1] {LDCE}
+	uut/dataMem/memory_reg[59][2] {LDCE}
+	uut/dataMem/memory_reg[59][3] {LDCE}
+	uut/dataMem/memory_reg[59][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[5][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[5][0] {LDCE}
+	uut/dataMem/memory_reg[5][1] {LDCE}
+	uut/dataMem/memory_reg[5][2] {LDCE}
+	uut/dataMem/memory_reg[5][3] {LDCE}
+	uut/dataMem/memory_reg[5][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[61][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[61][0] {LDCE}
+	uut/dataMem/memory_reg[61][1] {LDCE}
+	uut/dataMem/memory_reg[61][2] {LDCE}
+	uut/dataMem/memory_reg[61][3] {LDCE}
+	uut/dataMem/memory_reg[61][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[6][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[6][0] {LDCE}
+	uut/dataMem/memory_reg[6][1] {LDCE}
+	uut/dataMem/memory_reg[6][2] {LDCE}
+	uut/dataMem/memory_reg[6][3] {LDCE}
+	uut/dataMem/memory_reg[6][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[7][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[7][0] {LDCE}
+	uut/dataMem/memory_reg[7][1] {LDCE}
+	uut/dataMem/memory_reg[7][2] {LDCE}
+	uut/dataMem/memory_reg[7][3] {LDCE}
+	uut/dataMem/memory_reg[7][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/memory_reg[9][7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/dataMem/memory_reg[9][0] {LDCE}
+	uut/dataMem/memory_reg[9][1] {LDCE}
+	uut/dataMem/memory_reg[9][2] {LDCE}
+	uut/dataMem/memory_reg[9][3] {LDCE}
+	uut/dataMem/memory_reg[9][4] {LDCE}
+WARNING: [Place 30-568] A LUT 'uut/controlunit/temp_reg[31]_i_3' is driving clock pin of 32 registers. This could lead to large hold time violations. First few involved registers are:
+	uut/insMem/temp_reg[0] {LDCE}
+	uut/insMem/temp_reg[10] {LDCE}
+	uut/insMem/temp_reg[11] {LDCE}
+	uut/insMem/temp_reg[12] {LDCE}
+	uut/insMem/temp_reg[13] {LDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.5.2 IO & Clk Clean Up
+Phase 2.1.5.2 IO & Clk Clean Up | Checksum: 7e4c6d7f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.5.3 Implementation Feasibility check On IDelay
+Phase 2.1.5.3 Implementation Feasibility check On IDelay | Checksum: 7e4c6d7f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.5.4 Commit IO Placement
+Phase 2.1.5.4 Commit IO Placement | Checksum: 3785e651
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+Phase 2.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fffdd34d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.6 Build Placer Netlist Model
+
+Phase 2.1.6.1 Place Init Design
+Phase 2.1.6.1 Place Init Design | Checksum: 198352356
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+Phase 2.1.6 Build Placer Netlist Model | Checksum: 198352356
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 2.1.7 Constrain Clocks/Macros
+
+Phase 2.1.7.1 Constrain Global/Regional Clocks
+Phase 2.1.7.1 Constrain Global/Regional Clocks | Checksum: 198352356
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+Phase 2.1.7 Constrain Clocks/Macros | Checksum: 198352356
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+Phase 2.1 Placer Initialization Core | Checksum: 198352356
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 198352356
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 856.320 ; gain = 0.000
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 1f7b9f622
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 861.844 ; gain = 5.523
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 1f7b9f622
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 861.844 ; gain = 5.523
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 1b9d3aba5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 861.844 ; gain = 5.523
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 131632907
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 861.844 ; gain = 5.523
+
+Phase 4.4 Commit Small Macros & Core Logic
+Phase 4.4 Commit Small Macros & Core Logic | Checksum: f0a724bd
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 867.730 ; gain = 11.410
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: f0a724bd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+Phase 4 Detail Placement | Checksum: f0a724bd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: f1523bf9
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+
+Phase 5.2 Post Placement Cleanup
+Phase 5.2 Post Placement Cleanup | Checksum: f1523bf9
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+
+Phase 5.3 Placer Reporting
+Phase 5.3 Placer Reporting | Checksum: f1523bf9
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+
+Phase 5.4 Final Placement Cleanup
+Phase 5.4 Final Placement Cleanup | Checksum: 12cd61c24
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 12cd61c24
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+Ending Placer Task | Checksum: 86080a8f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.781 ; gain = 11.461
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.535 . Memory (MB): peak = 873.930 ; gain = 6.148
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 878.098 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 0bc472ec
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 1006.359 ; gain = 122.949
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 317c06bd
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 1016.313 ; gain = 132.902
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 5d28081c
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1016.313 ; gain = 132.902
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 738
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1a43ddb89
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+Phase 4 Rip-up And Reroute | Checksum: 1a43ddb89
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+
+Phase 5 Post Hold Fix
+Phase 5 Post Hold Fix | Checksum: 1a43ddb89
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+
+Phase 6 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.63103 %
+  Global Horizontal Routing Utilization  = 2.0501 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 45.045%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 67.5676%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 57.3529%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 51.4706%, No Congested Regions.
+Phase 6 Route finalize | Checksum: 1a43ddb89
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: 1a43ddb89
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: 14449debb
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: 14449debb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 1016.313 ; gain = 132.902
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1016.313 ; gain = 138.215
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.872 . Memory (MB): peak = 1016.313 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Xilinx/Vivado/CPU2/CPU2.runs/impl_1/display_cpu2_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Power 33-232] No user defined clocks was found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 137 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./display_cpu2.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/Xilinx/Vivado/CPU2/CPU2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Jun 23 00:28:15 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2014.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1369.855 ; gain = 334.793
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 23 00:28:15 2018...
+
+*** Running vivado
+    with args -log display_cpu2.vdi -applog -m64 -messageDb vivado.pb -mode batch -source display_cpu2.tcl -notrace
+
+
+****** Vivado v2014.2 (64-bit)
+  **** SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+  **** IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source display_cpu2.tcl -notrace
+Command: open_checkpoint display_cpu2_routed.dcp
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+Parsing XDC File [C:/Xilinx/Vivado/CPU2/CPU2.runs/impl_1/.Xil/Vivado-6596-LAPTOP-QPRR3A3L/dcp/display_cpu2.xdc]
+Finished Parsing XDC File [C:/Xilinx/Vivado/CPU2/CPU2.runs/impl_1/.Xil/Vivado-6596-LAPTOP-QPRR3A3L/dcp/display_cpu2.xdc]
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.355 . Memory (MB): peak = 475.648 ; gain = 0.000
+Restoring placement.
+Restored 928 out of 928 XDEF sites from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Project 1-484] Checkpoint was created with build 932637
+open_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 475.648 ; gain = 284.188
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 137 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./display_cpu2.bit...
+Writing bitstream ./display_cpu2.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/Xilinx/Vivado/CPU2/CPU2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Jun 23 00:52:06 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2014.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 798.879 ; gain = 323.230
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 23 00:52:06 2018...

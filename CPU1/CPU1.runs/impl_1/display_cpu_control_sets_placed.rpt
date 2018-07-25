@@ -1,0 +1,94 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu May 24 15:29:37 2018
+| Host         : LAPTOP-QPRR3A3L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file display_cpu_control_sets_placed.rpt
+| Design       : display_cpu
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    41 |
+| Minimum Number of register sites lost to control set restrictions |    24 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             263 |          159 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             101 |           33 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              12 |            6 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------+-------------------+------------------+----------------+
+|              Clock Signal              |          Enable Signal         |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------------------------+--------------------------------+-------------------+------------------+----------------+
+|  clock_IBUF_BUFG                       |                                |                   |                2 |              3 |
+|  U0/E[0]                               |                                |                   |                1 |              4 |
+|  U1/clk_sys                            | U0/n_0_FSM_onehot_count[5]_i_1 | uut/Pc/O94        |                2 |              5 |
+|  f/clk                                 | uut/Pc/PCWre                   | uut/Pc/O94        |                4 |              7 |
+|  uut/Pc/O17[0]                         |                                |                   |                7 |              8 |
+|  uut/Pc/O19[0]                         |                                |                   |                5 |              8 |
+|  uut/Pc/O21[0]                         |                                |                   |                6 |              8 |
+|  uut/Pc/O22[0]                         |                                |                   |                3 |              8 |
+|  uut/Pc/O23[0]                         |                                |                   |                5 |              8 |
+|  uut/Pc/O25[0]                         |                                |                   |                3 |              8 |
+|  uut/Pc/O26[0]                         |                                |                   |                4 |              8 |
+|  uut/Pc/O28[0]                         |                                |                   |                4 |              8 |
+|  uut/Pc/O29[0]                         |                                |                   |                3 |              8 |
+|  uut/Pc/O30[0]                         |                                |                   |                4 |              8 |
+|  uut/Pc/O31[0]                         |                                |                   |                4 |              8 |
+|  uut/Pc/O32[0]                         |                                |                   |                7 |              8 |
+|  uut/Pc/O34[0]                         |                                |                   |                6 |              8 |
+|  uut/Pc/O35[0]                         |                                |                   |                6 |              8 |
+|  uut/Pc/O37[0]                         |                                |                   |                8 |              8 |
+|  uut/Pc/O38[0]                         |                                |                   |                5 |              8 |
+|  uut/Pc/O40[0]                         |                                |                   |                3 |              8 |
+|  uut/Pc/O5[0]                          |                                |                   |                4 |              8 |
+|  uut/Pc/O97[0]                         |                                |                   |                4 |              8 |
+|  uut/Pc/E[0]                           |                                |                   |                4 |              8 |
+|  uut/Pc/O10[0]                         |                                |                   |                8 |              8 |
+|  uut/Pc/O12[0]                         |                                |                   |                7 |              8 |
+|  uut/dataMem/n_0_memory_reg[0][7]_i_2  |                                |                   |                4 |              8 |
+|  uut/dataMem/n_0_memory_reg[10][7]_i_2 |                                |                   |                8 |              8 |
+|  uut/dataMem/n_0_memory_reg[11][7]_i_2 |                                |                   |                5 |              8 |
+|  uut/dataMem/n_0_memory_reg[16][7]_i_2 |                                |                   |                4 |              8 |
+|  uut/dataMem/n_0_memory_reg[19][7]_i_2 |                                |                   |                5 |              8 |
+|  uut/dataMem/n_0_memory_reg[21][7]_i_2 |                                |                   |                4 |              8 |
+|  uut/dataMem/n_0_memory_reg[27][7]_i_2 |                                |                   |                8 |              8 |
+|  uut/dataMem/n_0_memory_reg[29][7]_i_2 |                                |                   |                2 |              8 |
+|  uut/dataMem/n_0_memory_reg[7][7]_i_2  |                                |                   |                3 |              8 |
+|  uut/Pc/O14[0]                         |                                |                   |                3 |              8 |
+|  clock_IBUF_BUFG                       |                                | f/clear           |                6 |             22 |
+|  clock_IBUF_BUFG                       |                                | n_0_btn_IBUF_inst |                6 |             22 |
+|  clock_IBUF_BUFG                       |                                | U1/clk_sys_0      |                7 |             25 |
+|  mRD                                   |                                | uut/Pc/O3         |               14 |             32 |
+| ~f/clk                                 | uut/Pc/p_0_in__0               |                   |               12 |             96 |
++----------------------------------------+--------------------------------+-------------------+------------------+----------------+
+
+

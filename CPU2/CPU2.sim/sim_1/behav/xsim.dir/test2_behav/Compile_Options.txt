@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "test2_behav" --prj "C:/Xilinx/Vivado/CPU2/CPU2.sim/sim_1/behav/test2.prj" "xil_defaultlib.test2" "xil_defaultlib.glbl" 

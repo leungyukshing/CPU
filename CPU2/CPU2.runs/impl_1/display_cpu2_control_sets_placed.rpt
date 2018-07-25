@@ -1,0 +1,131 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Sat Jun 23 00:27:06 2018
+| Host         : LAPTOP-QPRR3A3L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file display_cpu2_control_sets_placed.rpt
+| Design       : display_cpu2
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    78 |
+| Minimum Number of register sites lost to control set restrictions |    36 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             693 |          421 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             107 |           37 |
+| Yes          | No                    | No                     |              32 |           15 |
+| Yes          | No                    | Yes                    |              44 |           17 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------------+--------------------------------+---------------------+------------------+----------------+
+|                     Clock Signal                     |          Enable Signal         |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++------------------------------------------------------+--------------------------------+---------------------+------------------+----------------+
+|  clock_IBUF_BUFG                                     |                                |                     |                2 |              2 |
+|  U0/E[0]                                             |                                |                     |                1 |              4 |
+|  U1/clk_sys                                          | U0/n_0_FSM_onehot_count[5]_i_1 | uut/Pc/O1           |                2 |              5 |
+|  uut/controlunit/n_0_FSM_onehot_nextState_reg[5]_i_2 |                                |                     |                2 |              5 |
+|  clk_BUFG                                            |                                | uut/Pc/O1           |                3 |              5 |
+|  uut/ALUoutDR/O38[0]                                 |                                |                     |                4 |              8 |
+|  uut/ALUoutDR/O37[0]                                 |                                |                     |                5 |              8 |
+|  uut/ALUoutDR/O36[0]                                 |                                |                     |                4 |              8 |
+|  uut/ALUoutDR/O35[0]                                 |                                |                     |                4 |              8 |
+|  uut/ALUoutDR/O34[0]                                 |                                |                     |                6 |              8 |
+|  uut/ALUoutDR/O31[0]                                 |                                |                     |                6 |              8 |
+|  uut/ALUoutDR/O29[0]                                 |                                |                     |                6 |              8 |
+|  uut/ALUoutDR/O28[0]                                 |                                |                     |                5 |              8 |
+|  uut/ALUoutDR/O32[0]                                 |                                |                     |                3 |              8 |
+|  uut/ALUoutDR/O22[0]                                 |                                |                     |                5 |              8 |
+|  uut/ALUoutDR/O21[0]                                 |                                |                     |                5 |              8 |
+|  uut/ALUoutDR/O20[0]                                 |                                |                     |                3 |              8 |
+|  uut/ALUoutDR/O19[0]                                 |                                |                     |                6 |              8 |
+|  uut/ALUoutDR/O18[0]                                 |                                |                     |                5 |              8 |
+|  uut/ALUoutDR/O16[0]                                 |                                |                     |                5 |              8 |
+|  uut/ALUoutDR/O15[0]                                 |                                |                     |                7 |              8 |
+|  uut/ALUoutDR/O14[0]                                 |                                |                     |                4 |              8 |
+|  uut/ALUoutDR/O13[0]                                 |                                |                     |                7 |              8 |
+|  uut/ALUoutDR/O12[0]                                 |                                |                     |                6 |              8 |
+|  uut/ALUoutDR/O11[0]                                 |                                |                     |                3 |              8 |
+|  uut/ALUoutDR/O10[0]                                 |                                |                     |                6 |              8 |
+|  uut/ALUoutDR/E[0]                                   |                                |                     |                6 |              8 |
+|  uut/controlunit/O73[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O72[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O71[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O70[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O69[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O68[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O67[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O66[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O65[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O64[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O63[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O62[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O61[0]                              |                                |                     |                7 |              8 |
+|  uut/controlunit/O60[0]                              |                                |                     |                7 |              8 |
+|  uut/controlunit/O59[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O58[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O57[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O56[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O55[0]                              |                                |                     |                7 |              8 |
+|  uut/controlunit/O54[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O53[0]                              |                                |                     |                7 |              8 |
+|  uut/controlunit/O52[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O51[0]                              |                                |                     |                3 |              8 |
+|  uut/controlunit/O50[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O49[0]                              |                                |                     |                7 |              8 |
+|  uut/controlunit/O48[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O47[0]                              |                                |                     |                3 |              8 |
+|  uut/controlunit/O46[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O45[0]                              |                                |                     |                8 |              8 |
+|  uut/controlunit/O44[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O43[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O42[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O41[0]                              |                                |                     |                4 |              8 |
+|  uut/controlunit/O40[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O39[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O38[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O37[0]                              |                                |                     |                6 |              8 |
+|  uut/controlunit/O36[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/O35[0]                              |                                |                     |                5 |              8 |
+|  uut/controlunit/E[0]                                |                                |                     |                5 |              8 |
+|  uut/ALUoutDR/O7[0]                                  |                                |                     |                4 |              8 |
+|  uut/ALUoutDR/O39[0]                                 |                                |                     |                4 |              8 |
+|  clock_IBUF_BUFG                                     |                                | f/clear             |                6 |             22 |
+|  clock_IBUF_BUFG                                     |                                | n_0_btn_IBUF_inst   |                6 |             22 |
+|  clock_IBUF_BUFG                                     |                                | U1/clk_sys_0        |                7 |             26 |
+|  IRWre                                               |                                |                     |               30 |             32 |
+|  clk_BUFG                                            | IRWre                          |                     |               15 |             32 |
+|  mRD                                                 |                                | uut/controlunit/mWR |               15 |             32 |
+|  clk_BUFG                                            | uut/controlunit/O79[0]         | uut/Pc/O1           |               15 |             39 |
+| ~clk_BUFG                                            | uut/insMem/p_0_in_0            |                     |               12 |             96 |
+|  clk_BUFG                                            |                                |                     |               56 |            138 |
++------------------------------------------------------+--------------------------------+---------------------+------------------+----------------+
+
+
